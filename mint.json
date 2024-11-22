@@ -1,0 +1,98 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Evolution API Documentation",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#00FFA7",
+    "light": "#00FFA7",
+    "dark": "#00FFA7",
+    "background": {
+      "dark": "#18181B",
+      "light": "#FFFFFF"
+    }
+  },
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": true
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "mailto:support@evolution-api.com"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Login",
+    "url": "https://app.evoapicloud.com"
+  },
+  "tabs": [
+    {
+      "name": "Documentation",
+      "url": "docs"
+    },
+    {
+      "name": "API Reference",
+      "url": "api"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "get-started/introduction",
+        "quickstart"
+      ]
+    },
+    {
+      "group": "Instances",
+      "pages": [
+        {
+          "group": "Instance Management",
+          "pages": [
+            "instances/overview",
+            "instances/creation"
+          ]
+        },
+        {
+          "group": "Automation",
+          "pages": [
+            "instances/automation/overview",
+            "instances/automation/canvas",
+            "instances/automation/nodes",
+            "instances/automation/edges"
+          ]
+        },
+        {
+          "group": "Chat",
+          "pages": [
+            "instances/chat/overview",
+            "instances/chat/input-message",
+            "instances/chat/button-messages"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "API Reference",
+      "pages": [
+        "api/authentication"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "github": "https://github.com/yourusername/evolution",
+    "twitter": "https://twitter.com/evolution",
+    "linkedin": "https://linkedin.com/company/evolution"
+  },
+  "analytics": {
+    
+  },
+  "search": {
+    "prompt": "Search documentation..."
+  },
+  "theme": "venus"
+}
