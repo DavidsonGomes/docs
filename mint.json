@@ -29,14 +29,13 @@
     "name": "Login",
     "url": "https://app.evoapicloud.com"
   },
+  "primaryTab": {
+    "name": "Geral"
+  },
   "tabs": [
     {
-      "name": "Documentation",
-      "url": "docs"
-    },
-    {
-      "name": "API Reference",
-      "url": "api"
+      "name": "API",
+      "url": "api-reference"
     }
   ],
   "navigation": [
@@ -77,9 +76,9 @@
       ]
     },
     {
-      "group": "API Reference",
+      "group": "Início",
       "pages": [
-        "api/authentication"
+        "api-reference/authentication"
       ]
     }
   ],
