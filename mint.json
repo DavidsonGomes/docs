@@ -47,13 +47,22 @@
       ]
     },
     {
+      "group": "Project",
+      "pages": [
+        "project/introduction",
+        "project/users",
+        "project/token",
+        "project/limit"
+      ]
+    },
+    {
       "group": "Instances",
       "pages": [
         {
           "group": "Instance Management",
           "pages": [
             "instances/overview",
-            "instances/creation"
+            "instances/creations"
           ]
         },
         {
@@ -87,9 +96,7 @@
     "twitter": "https://twitter.com/evolution",
     "linkedin": "https://linkedin.com/company/evolution"
   },
-  "analytics": {
-    
-  },
+  "analytics": {},
   "search": {
     "prompt": "Search documentation..."
   },
