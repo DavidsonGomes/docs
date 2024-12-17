@@ -43,43 +43,91 @@
       "group": "Getting Started",
       "pages": [
         "get-started/introduction",
-        "quickstart"
+        "get-started/users",
+        "get-started/limit"
       ]
     },
     {
       "group": "Project",
       "pages": [
         "project/introduction",
-        "project/users",
-        "project/token",
-        "project/limit"
+        "project/customers",
+        "project/token"
+       
       ]
     },
     {
       "group": "Instances",
       "pages": [
         {
+          "group": "Dashboard",
+          "icon": "chart-simple",
+          "pages": [
+            "instances/dashboard/overview"
+          ]
+        },
+        {
           "group": "Instance Management",
+          "icon": "gear",
           "pages": [
             "instances/overview",
-            "instances/creations"
+            "instances/creations",
+            {
+              "group": "Configuration",
+              "pages":[
+                "instances/configuration/settings"
+              ]
+            }
           ]
         },
         {
-          "group": "Automation",
+          "group": "CRM",
+          "icon": "message",
           "pages": [
-            "instances/automation/overview",
-            "instances/automation/canvas",
-            "instances/automation/nodes",
-            "instances/automation/edges"
+            {
+              "group": "Chat",
+              "pages":[
+                "instances/chat/overview",
+                "instances/chat/input-message",
+                "instances/chat/button-messages"
+              ]
+            },
+            {
+              "group": "Contacts",
+              "pages":[
+                "instances/contacts/overview",
+                "instances/contacts/input-message",
+                "instances/contacts/button-messages"
+              ]
+            }
           ]
         },
         {
-          "group": "Chat",
+          "group": "Events",
+          "icon": "timeline",
           "pages": [
-            "instances/chat/overview",
-            "instances/chat/input-message",
-            "instances/chat/button-messages"
+            "instances/events/webhook",
+            "instances/events/websocket",
+            "instances/events/pusher"
+          ]
+        },
+        {
+          "group": "Chatbots",
+          "icon": "robot",
+          "pages": [
+            "instances/chatbot/EvolutionBot",
+            "instances/chatbot/Chatwoot",
+            "instances/chatbot/TypeBot",
+            "instances/chatbot/OpeIa",
+            "instances/chatbot/Dify",
+            "instances/chatbot/Flowise"
+          ]
+        },
+        {
+          "group": "Token",
+          "icon": "key",
+          "pages": [
+            "instances/Token/TokenInstance"
           ]
         }
       ]
