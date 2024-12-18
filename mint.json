@@ -64,8 +64,8 @@
           "group": "Instance Management",
           "icon": "gear",
           "pages": [
-            "instances/overview",
-            "instances/creations",
+            "instances/management/overview",
+            "instances/management/creations",
             {
               "group": "Configuration",
               "pages":[
