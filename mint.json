@@ -59,13 +59,7 @@
     {
       "group": "Instances",
       "pages": [
-        {
-          "group": "Dashboard",
-          "icon": "chart-simple",
-          "pages": [
-            "instances/dashboard/overview"
-          ]
-        },
+       
         {
           "group": "Instance Management",
           "icon": "gear",
@@ -78,6 +72,13 @@
                 "instances/management/configurations/settings"
               ]
             }
+          ]
+        },
+        {
+          "group": "Dashboard",
+          "icon": "chart-simple",
+          "pages": [
+            "instances/dashboard/overview"
           ]
         },
         {
@@ -127,7 +128,7 @@
           "group": "Token",
           "icon": "key",
           "pages": [
-            "instances/Token/TokenInstance"
+            "instances/token/token-instance"
           ]
         }
       ]
