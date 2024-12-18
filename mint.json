@@ -75,7 +75,7 @@
             {
               "group": "Configuration",
               "pages":[
-                "instances/configuration/settings"
+                "instances/management/configurations/settings"
               ]
             }
           ]
