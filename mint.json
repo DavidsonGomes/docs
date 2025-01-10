@@ -1,6 +1,7 @@
 {
   "$schema": "https://mintlify.com/schema.json",
   "name": "Evolution API Documentation",
+  "openapi": ["/openapi/viewer.json"],
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -107,6 +108,7 @@
           "group": "Events",
           "icon": "timeline",
           "pages": [
+            "instances/events/events-system",
             "instances/events/webhook",
             "instances/events/websocket",
             "instances/events/pusher"
@@ -116,12 +118,12 @@
           "group": "Chatbots",
           "icon": "robot",
           "pages": [
-            "instances/chatbot/EvolutionBot",
-            "instances/chatbot/Chatwoot",
-            "instances/chatbot/TypeBot",
-            "instances/chatbot/OpeIa",
-            "instances/chatbot/Dify",
-            "instances/chatbot/Flowise"
+            "instances/chatbot/chatwoot",
+            "instances/chatbot/dify",
+            "instances/chatbot/evolutionbot",
+            "instances/chatbot/flowise",
+            "instances/chatbot/openai",
+            "instances/chatbot/typebot"
           ]
         },
         {
@@ -137,6 +139,19 @@
       "group": "Início",
       "pages": [
         "api-reference/authentication"
+      ]
+    },
+    {
+      "group": "Instances",
+      "pages": [
+        "api-reference/instance-controller/create-instance-basic",
+        "api-reference/instance-controller/fetch-instances",
+        "api-reference/instance-controller/instance-connect",
+        "api-reference/instance-controller/restart-instance",
+        "api-reference/instance-controller/connection-state",
+        "api-reference/instance-controller/logout-instance",
+        "api-reference/instance-controller/delete-instance",
+        "api-reference/instance-controller/set-presence"
       ]
     }
   ],
