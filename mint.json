@@ -168,8 +168,23 @@
         "api-reference/chat-controller/mark-as-read",
         "api-reference/chat-controller/mark-as-unread",
         "api-reference/chat-controller/send-presence",
-        "api-reference/chat-controller/update-message",
-        "api-reference/chat-controller/updateBlockStatus"
+        "api-reference/chat-controller/update-message"
+      ]
+    },
+    {
+      "group": "Message",
+      "pages": [
+        "api-reference/message-controller/send-audio",
+        "api-reference/message-controller/send-button",
+        "api-reference/message-controller/send-contact",
+        "api-reference/message-controller/send-list",
+        "api-reference/message-controller/send-location",
+        "api-reference/message-controller/send-media",
+        "api-reference/message-controller/send-poll",
+        "api-reference/message-controller/send-reaction",
+        "api-reference/message-controller/send-status",
+        "api-reference/message-controller/send-sticker",
+        "api-reference/message-controller/send-text"
       ]
     }
   ],
