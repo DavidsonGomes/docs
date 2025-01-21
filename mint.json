@@ -186,6 +186,13 @@
         "api-reference/message-controller/send-sticker",
         "api-reference/message-controller/send-text"
       ]
+    },
+    {
+      "group": "Settings",
+      "pages": [
+        "api-reference/settings/get",
+        "api-reference/settings/set"
+      ]
     }
   ],
   "footerSocials": {
