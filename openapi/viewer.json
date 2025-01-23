@@ -5196,6 +5196,500 @@
         }
       }
     },
+    "/group/create/{instance}": {
+      "post": {
+        "tags": ["Group"],
+        "summary": "Create Group",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "subject": "Test 02",
+                  "description": "optional",
+                  "participants": ["5531900000000", "5531900000000"]
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "instance",
+            "in": "path",
+            "schema": { "type": "string" },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/group/updateGroupPicture/{instance}": {
+      "post": {
+        "tags": ["Group"],
+        "summary": "Update Group Picture",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "image": "https://evolution-api.com/files/sticker.png"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "groupJid",
+            "in": "query",
+            "schema": { "type": "string", "example": "{{groupJid}}" }
+          },
+          {
+            "name": "instance",
+            "in": "path",
+            "schema": { "type": "string" },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/group/updateGroupSubject/{instance}": {
+      "post": {
+        "tags": ["Group"],
+        "summary": "Update Group Subject",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": { "subject": "Group Name or Subject" }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "groupJid",
+            "in": "query",
+            "schema": { "type": "string", "example": "{{groupJid}}" }
+          },
+          {
+            "name": "instance",
+            "in": "path",
+            "schema": { "type": "string" },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/group/updateGroupDescription/{instance}": {
+      "post": {
+        "tags": ["Group"],
+        "summary": "Update Group Description",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": { "description": "Group Description or Rules" }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "groupJid",
+            "in": "query",
+            "schema": { "type": "string", "example": "{{groupJid}}" }
+          },
+          {
+            "name": "instance",
+            "in": "path",
+            "schema": { "type": "string" },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/group/inviteCode/{instance}": {
+      "get": {
+        "tags": ["Group"],
+        "summary": "Fetch Invite Code",
+        "parameters": [
+          {
+            "name": "groupJid",
+            "in": "query",
+            "schema": { "type": "string", "example": "{{groupJid}}" }
+          },
+          {
+            "name": "instance",
+            "in": "path",
+            "schema": { "type": "string" },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/group/revokeInviteCode/{instance}": {
+      "post": {
+        "tags": ["Group"],
+        "summary": "Revoke Invite Code",
+        "requestBody": { "content": {} },
+        "parameters": [
+          {
+            "name": "groupJid",
+            "in": "query",
+            "schema": { "type": "string", "example": "{{groupJid}}" }
+          },
+          {
+            "name": "instance",
+            "in": "path",
+            "schema": { "type": "string" },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/group/sendInvite/{instance}": {
+      "post": {
+        "tags": ["Group"],
+        "summary": "Send Invite Url",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "groupJid": "{{groupJid}}",
+                  "description": "Access this link to join my WhatsApp group:",
+                  "numbers": ["{{remoteJid}}"]
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "instance",
+            "in": "path",
+            "schema": { "type": "string" },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/group/inviteInfo/{instance}": {
+      "get": {
+        "tags": ["Group"],
+        "summary": "Find Group by Invite Code",
+        "parameters": [
+          {
+            "name": "inviteCode",
+            "in": "query",
+            "schema": { "type": "string", "example": "{{inviteCode}}" }
+          },
+          {
+            "name": "instance",
+            "in": "path",
+            "schema": { "type": "string" },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/group/findGroupInfos/{instance}": {
+      "get": {
+        "tags": ["Group"],
+        "summary": "Find Group by Jid",
+        "parameters": [
+          {
+            "name": "groupJid",
+            "in": "query",
+            "schema": { "type": "string", "example": "{{groupJid}}" }
+          },
+          {
+            "name": "instance",
+            "in": "path",
+            "schema": { "type": "string" },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/group/fetchAllGroups/{instance}": {
+      "get": {
+        "tags": ["Group"],
+        "summary": "Fetch All Groups",
+        "parameters": [
+          {
+            "name": "getParticipants",
+            "in": "query",
+            "schema": { "type": "boolean", "example": "false" }
+          },
+
+          {
+            "name": "instance",
+            "in": "path",
+            "schema": { "type": "string" },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/group/participants/{instance}": {
+      "get": {
+        "tags": ["Group"],
+        "summary": "Find Participants",
+        "parameters": [
+          {
+            "name": "groupJid",
+            "in": "query",
+            "schema": { "type": "string", "example": "{{groupJid}}" }
+          },
+          {
+            "name": "instance",
+            "in": "path",
+            "schema": { "type": "string" },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/group/updateParticipant/{instance}": {
+      "post": {
+        "tags": ["Group"],
+        "summary": "Update Participant",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "action": "add",
+                  "participants": [
+                    "5531900000000",
+                    "5531911111111",
+                    "5531922222222"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "groupJid",
+            "in": "query",
+            "schema": { "type": "string", "example": "{{groupJid}}" }
+          },
+          {
+            "name": "instance",
+            "in": "path",
+            "schema": { "type": "string" },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/group/updateSetting/{instance}": {
+      "post": {
+        "tags": ["Group"],
+        "summary": "Update Setting",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": { "action": "not_announcement" }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "groupJid",
+            "in": "query",
+            "schema": { "type": "string", "example": "{{groupJid}}" }
+          },
+          {
+            "name": "instance",
+            "in": "path",
+            "schema": { "type": "string" },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/group/toggleEphemeral/{instance}": {
+      "post": {
+        "tags": ["Group"],
+        "summary": "Toggle Ephemeral",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": { "expiration": 0 }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "groupJid",
+            "in": "query",
+            "schema": { "type": "string", "example": "{{groupJid}}" }
+          },
+          {
+            "name": "instance",
+            "in": "path",
+            "schema": { "type": "string" },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/group/leaveGroup/{instance}": {
+      "delete": {
+        "tags": ["Group"],
+        "summary": "Leave Group",
+        "parameters": [
+          {
+            "name": "groupJid",
+            "in": "query",
+            "schema": { "type": "string", "example": "{{groupJid}}" }
+          },
+          {
+            "name": "instance",
+            "in": "path",
+            "schema": { "type": "string" },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
     "/": {
       "get": {
         "operationId": "getEvoInfo",
