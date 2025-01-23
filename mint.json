@@ -193,6 +193,13 @@
         "api-reference/settings/get",
         "api-reference/settings/set"
       ]
+    },
+    {
+      "group": "Webhook",
+      "pages": [
+        "api-reference/webhook/get",
+        "api-reference/webhook/set"
+      ]
     }
   ],
   "footerSocials": {
