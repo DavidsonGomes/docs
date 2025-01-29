@@ -4,7 +4,52 @@ title: 'Introduction'
 
 ---
 
-**EvolutionAPI Cloud** is a comprehensive **omnichannel SaaS solution** for messaging automation and management. Connect multiple channels including **WhatsApp**, **Facebook Messenger**, and **Instagram** through our unified platform. Businesses can efficiently handle **help desk operations**, **digital marketing**, and **sales** simultaneously across all channels. With advanced **chatbot capabilities**, **message scheduling**, and **remarketing features**, you can enhance your customer interactions and drive better results. Experience EvolutionAPI Cloud today and take your business communications to the next level!
+To configure Evolution Bot within your instance, you need to follow the following instructions. Click on the top right button on **+ Evolution Bot**, it will open a modal where you will first configure the apiKey of your instance, pass the apiURL where the LLM is running (Bot) and provide a description for that bot
 
-This documentation will guide you through everything from quick start tips to advanced platform usage and automation workflow examples.
+<img src="/images/chatbot/evobotconfig.png" alt="Descrição da Imagem"  />
 
+Now you must configure what the command should be to start the bot session, it can be a regex expression, a keyword, or any interest with the bot
+
+<img src="/images/chatbot/evobottriger.png" alt="Descrição da Imagem"  />
+
+Configure the conditions under which the bot will stop when receiving user input
+
+
+## General Settings
+This section contains essential options for customizing the behavior of the EvolutionBot.
+
+### **Expire in Minutes**
+- **Description:** Sets the duration (in minutes) after which the bot session expires.
+- **Recommended Value:** `0` for unlimited session time. Set a specific value for time-limited sessions.
+
+### **Keyword to Finish**
+- **Description:** Defines a specific keyword that the user can send to immediately terminate the bot session.
+- **Example:** `exit`, `end`, or any custom word.
+
+### **Default Delay Message**
+- **Description:** Specifies the time delay (in milliseconds) between the bot’s responses.
+- **Recommended Value:** `0` for instant responses. Increase the value if you want a simulated typing delay.
+
+### **Unknown Message**
+- **Description:** Sets a default message to display when the bot does not understand the user's input.
+- **Example:** "Sorry, I didn't understand that. Can you please rephrase?"
+
+### **Listen from Me**
+- **Description:** Enables the bot to listen for input from the user.
+- **Recommended Setting:** `true` to activate user input listening.
+
+### **Stop Bot from Me**
+- **Description:** Configures whether the bot can be stopped by user input.
+- **Example:** Set a specific keyword that stops the bot, such as `stopbot`.
+
+### **Keep Open**
+- **Description:** Determines whether the chat window remains open after the conversation is complete.
+- **Recommended Setting:** `true` to keep the chat open.
+
+### **Debounce Time**
+- **Description:** Sets a time interval (in milliseconds) to prevent multiple rapid requests to the bot.
+- **Recommended Value:** `0` to disable debouncing. Increase the value if you need to limit rapid user inputs.
+
+### **Split Messages**
+- **Description:** Enables the bot to split long messages into multiple parts for easier readability.
+- **Recommended Setting:** `true` to improve message readability.
