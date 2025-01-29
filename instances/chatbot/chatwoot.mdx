@@ -3,8 +3,96 @@ sidebarTitle: 'Chatwoot'
 title: 'Introduction'
 
 ---
+To set up evolution's integration with chatwoot, make the following settings
 
-**EvolutionAPI Cloud** is a comprehensive **omnichannel SaaS solution** for messaging automation and management. Connect multiple channels including **WhatsApp**, **Facebook Messenger**, and **Instagram** through our unified platform. Businesses can efficiently handle **help desk operations**, **digital marketing**, and **sales** simultaneously across all channels. With advanced **chatbot capabilities**, **message scheduling**, and **remarketing features**, you can enhance your customer interactions and drive better results. Experience EvolutionAPI Cloud today and take your business communications to the next level!
+<img src="/images/chatbot/cw1.png" alt="Descrição da Imagem"  />
 
-This documentation will guide you through everything from quick start tips to advanced platform usage and automation workflow examples.
+## **Enabled**  
+Activate or deactivate the Chatwoot integration.  
+- **Enabled:** Allows communication with the platform.  
+- **Disabled:** Completely disables the integration.  
+
+---
+
+## **Chatwoot URL**  
+The base URL of your Chatwoot instance.  
+- Example: `https://my-chatwoot-instance.com`  
+
+---
+
+## **Account ID**  
+The unique identifier for your Chatwoot account.  
+- Provide the **Account ID** available in your account settings.  
+
+---
+
+## **Token**  
+Authentication token required to communicate with Chatwoot's API.  
+- Ensure the token has the necessary permissions.  
+
+---
+
+## **Sign Messages**  
+Specifies whether messages sent through Chatwoot will include the Chatwoot username signature.  
+- **Enabled:** Messages will include the user signature.  
+- **Disabled:** Messages will not have signatures.  
+
+---
+
+## **Signature Delimiter**  
+Characters used to separate the message content from the signature.  
+- Example: `\n` for a line break between the message and the signature.  
+
+---
+
+<img src="/images/chatbot/cw2.png" alt="Descrição da Imagem"  />
+
+## **Inbox Name**  
+The name of the Chatwoot Inbox used to manage conversations.  
+- Ensure you use the exact name configured in Chatwoot.  
+
+---
+
+## **Organization**  
+The name of the organization linked to the Chatwoot account.  
+
+---
+
+## **Logo**  
+The URL for the image to be displayed as the logo in Chatwoot for this integration.  
+
+---
+
+## **Pending Conversation**  
+Determines whether conversations start with the "Pending" status.  
+- **Enabled:** Conversations start as pending.  
+- **Disabled:** Conversations assume a different status immediately.  
+
+---
+
+## **Merge Brazil Contacts**  
+Merges duplicate contacts that use the Brazil country code (+55).  
+- **Enabled:** Duplicate contacts will be merged automatically.  
+- **Disabled:** Contacts will remain separate.  
+
+---
+
+## **Reopen Conversation**  
+Specifies whether a conversation will reopen when a new message is received.  
+- **Enabled:** Conversations will reopen automatically.  
+- **Disabled:** Conversations remain closed.  
+
+---
+
+## **Ignore JIDs**  
+Excludes specific WhatsApp numbers from being managed by the bot.  
+- Format: `1234567890@s.whatsapp.net`  
+- Type and press **Enter** after each number.  
+
+---
+
+## **Automatically Create**  
+Sets up automatic creation of the integration upon saving.  
+- **Enabled:** Integration is created automatically.  
+- **Disabled:** Requires manual creation.  
 
