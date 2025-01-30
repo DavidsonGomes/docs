@@ -1,10 +1,93 @@
 ---
 sidebarTitle: 'Flowise'
 title: 'Introduction'
+---
+
+Flowise Integration Configuration
+
+## Enabled
+
+- **Description:** Toggle to activate or deactivate the Flowise integration.  
+- **Options:** On / Off
+
+## Description*
+
+- **Description:** A brief description to identify the purpose or context of this integration.  
+- **Requirement:** Mandatory field
 
 ---
 
-**EvolutionAPI Cloud** is a comprehensive **omnichannel SaaS solution** for messaging automation and management. Connect multiple channels including **WhatsApp**, **Facebook Messenger**, and **Instagram** through our unified platform. Businesses can efficiently handle **help desk operations**, **digital marketing**, and **sales** simultaneously across all channels. With advanced **chatbot capabilities**, **message scheduling**, and **remarketing features**, you can enhance your customer interactions and drive better results. Experience EvolutionAPI Cloud today and take your business communications to the next level!
+## Flowise Settings
 
-This documentation will guide you through everything from quick start tips to advanced platform usage and automation workflow examples.
+### API URL*
+
+- **Description:** Enter the URL of the Flowise API. This is the endpoint that handles communication between your platform and Flowise.  
+- **Example:** `https://api.flowise.io/v1/`  
+- **Requirement:** Mandatory field
+
+### API Key
+
+- **Description:** The API key used to authenticate requests to Flowise.  
+- **Visibility:** Hidden by default for security purposes
+
+---
+
+## Trigger Settings
+
+### Trigger Type
+
+- **Description:** Determines how the Flowise bot is activated.  
+- **Options:** Keyword
+
+### Trigger Operator
+
+- **Description:** Defines the matching condition for the trigger.  
+- **Options:** Contains / Equals / Starts with / Ends with
+
+### Trigger
+
+- **Description:** The specific word or phrase that triggers the bot when matched based on the operator setting.
+
+---
+
+## General Settings
+
+### Expire in Minutes
+
+- **Description:** Time in minutes before the bot interaction automatically expires.  
+- **Default Value:** `0` (never expires)
+
+### Keyword to Finish
+
+- **Description:** A specific keyword to terminate the bot conversation.
+
+### Default Delay Message
+
+- **Description:** Sets the delay (in seconds) before sending responses.  
+- **Default Value:** `0`
+
+### Unknown Message
+
+- **Description:** Default message returned when the bot doesn't recognize the user's input.
+
+### Listen from Me
+
+- **Description:** Allows the bot to listen to messages from specific user roles.
+
+### Stop Bot from Me
+
+- **Description:** Stops the bot interaction when specific roles or commands are used.
+
+### Keep Open
+
+- **Description:** Keeps the chat interaction open even after a message exchange.
+
+### Debounce Time
+
+- **Description:** Defines a wait period to avoid processing duplicate or rapid messages.  
+- **Default Value:** `0`
+
+### Split Messages
+
+- **Description:** Enable or disable splitting long messages into smaller chunks.
 

@@ -123,7 +123,9 @@
             "instances/chatbot/evolutionbot",
             "instances/chatbot/flowise",
             "instances/chatbot/openai",
-            "instances/chatbot/typebot"
+            "instances/chatbot/typebot",
+            "instances/chatbot/defaultsettings",
+            "instances/chatbot/sessions"
           ]
         },
         {

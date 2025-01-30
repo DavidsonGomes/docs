@@ -1,10 +1,76 @@
 ---
 sidebarTitle: 'Dify'
 title: 'Introduction'
+---
+
+This guide provides detailed instructions for configuring the integration between Evolution Bot and Dify.
+
+## **Enabled**  
+Activate or deactivate the Dify integration.  
+- **Enabled:** Allows communication between Evolution Bot and Dify.  
+- **Disabled:** Disables this integration.  
 
 ---
 
-**EvolutionAPI Cloud** is a comprehensive **omnichannel SaaS solution** for messaging automation and management. Connect multiple channels including **WhatsApp**, **Facebook Messenger**, and **Instagram** through our unified platform. Businesses can efficiently handle **help desk operations**, **digital marketing**, and **sales** simultaneously across all channels. With advanced **chatbot capabilities**, **message scheduling**, and **remarketing features**, you can enhance your customer interactions and drive better results. Experience EvolutionAPI Cloud today and take your business communications to the next level!
+## **Description***  
+A required field to briefly describe this integration instance.  
+- Example: "Customer Inquiry Assistant with Dify Integration."  
 
-This documentation will guide you through everything from quick start tips to advanced platform usage and automation workflow examples.
+---
+
+## **Dify Settings**  
+
+### **Dify API URL***  
+The API endpoint URL for your Dify instance.  
+- Ensure that this URL points to a valid Dify API endpoint.  
+
+### **Public Name of the Dify**  
+The visible name associated with this Dify integration.  
+- This name helps identify the Dify instance in your system.  
+
+---
+
+## **Trigger Settings**  
+
+### **Trigger Type**  
+Defines the condition that triggers the Dify integration.  
+- **Keyword:** The Dify bot will be triggered by a specific keyword.  
+
+### **Trigger Operator**  
+Specifies the rule for matching the keyword in messages.  
+- **Contains:** Trigger fires when the keyword is found within a message.  
+
+### **Trigger**  
+The keyword that activates Dify when used in a conversation.  
+- Example: "Help."  
+
+---
+
+## **General Settings**  
+
+### **Expire in Minutes**  
+Sets the time in minutes after which the bot session expires.  
+- **0:** No expiration.  
+
+### **Keyword to Finish**  
+Defines the keyword used to manually end a bot session.  
+- Example: "Exit."  
+
+### **Default Delay Message**  
+The default delay time between bot messages in seconds.  
+- **0:** No delay.  
+
+### **Unknown Message**  
+Handles responses when the bot receives an unknown message.  
+
+### **Listen from Me**  
+Defines whether the bot listens to user messages when the sender is the bot itself.  
+
+### **Stop Bot from Me**  
+Allows stopping the bot when a specific action or condition is triggered.  
+
+### **Keep Open**  
+Keeps the conversation active, even after the bot finishes its interaction.  
+- **Enabled:** Keeps the session open.  
+- **Disabled:** Ends the session automatically. 
 
