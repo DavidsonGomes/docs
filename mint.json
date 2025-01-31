@@ -1,6 +1,7 @@
 {
   "$schema": "https://mintlify.com/schema.json",
   "name": "Evolution API Documentation",
+  "openapi": ["/openapi/viewer.json"],
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -29,14 +30,13 @@
     "name": "Login",
     "url": "https://app.evoapicloud.com"
   },
+  "primaryTab": {
+    "name": "Geral"
+  },
   "tabs": [
     {
-      "name": "Documentation",
-      "url": "docs"
-    },
-    {
-      "name": "API Reference",
-      "url": "api"
+      "name": "API",
+      "url": "api-reference"
     }
   ],
   "navigation": [
@@ -44,42 +44,190 @@
       "group": "Getting Started",
       "pages": [
         "get-started/introduction",
-        "quickstart"
+        "get-started/users",
+        "get-started/limit"
+      ]
+    },
+    {
+      "group": "Project",
+      "pages": [
+        "project/introduction",
+        "project/customers",
+        "project/token"
+       
+      ]
+    },
+    {
+      "group": "Server",
+      "pages": [
+        "servers/newserver"
+       
       ]
     },
     {
       "group": "Instances",
       "pages": [
+       
         {
           "group": "Instance Management",
+          "icon": "gear",
           "pages": [
-            "instances/overview",
-            "instances/creation"
+            "instances/management/overview",
+            "instances/management/creations",
+            {
+              "group": "Configuration",
+              "pages":[
+                "instances/management/configurations/settings"
+              ]
+            }
           ]
         },
         {
-          "group": "Automation",
+          "group": "Dashboard",
+          "icon": "chart-simple",
           "pages": [
-            "instances/automation/overview",
-            "instances/automation/canvas",
-            "instances/automation/nodes",
-            "instances/automation/edges"
+            "instances/dashboard/overview"
           ]
         },
         {
-          "group": "Chat",
+          "group": "CRM",
+          "icon": "message",
           "pages": [
-            "instances/chat/overview",
-            "instances/chat/input-message",
-            "instances/chat/button-messages"
+                "instances/crm/overview",
+                "instances/crm/chat",
+                "instances/crm/contact"
+          ]
+        },
+        {
+          "group": "Events",
+          "icon": "timeline",
+          "pages": [
+            "instances/events/events-system",
+            "instances/events/webhook",
+            "instances/events/websocket",
+            "instances/events/pusher"
+          ]
+        },
+        {
+          "group": "Chatbots",
+          "icon": "robot",
+          "pages": [
+            "instances/chatbot/chatwoot",
+            "instances/chatbot/dify",
+            "instances/chatbot/evolutionbot",
+            "instances/chatbot/flowise",
+            "instances/chatbot/openai",
+            "instances/chatbot/typebot",
+            "instances/chatbot/defaultsettings",
+            "instances/chatbot/sessions"
+          ]
+        },
+        {
+          "group": "Token",
+          "icon": "key",
+          "pages": [
+            "instances/token/token-instance"
           ]
         }
       ]
     },
     {
-      "group": "API Reference",
+      "group": "Início",
       "pages": [
-        "api/authentication"
+        "api-reference/authentication"
+      ]
+    },
+    {
+      "group": "Instances",
+      "pages": [
+        "api-reference/instance-controller/create-instance-basic",
+        "api-reference/instance-controller/fetch-instances",
+        "api-reference/instance-controller/instance-connect",
+        "api-reference/instance-controller/restart-instance",
+        "api-reference/instance-controller/connection-state",
+        "api-reference/instance-controller/logout-instance",
+        "api-reference/instance-controller/delete-instance",
+        "api-reference/instance-controller/set-presence"
+      ]
+    },
+    {
+      "group": "Chat",
+      "pages": [
+        "api-reference/chat-controller/archive-chat",
+        "api-reference/chat-controller/check-is-whatsapp",
+        "api-reference/chat-controller/delete-message-for-everyone",
+        "api-reference/chat-controller/fetch-profilepic-url",
+        "api-reference/chat-controller/find-chats",
+        "api-reference/chat-controller/find-contacts",
+        "api-reference/chat-controller/find-messages",
+        "api-reference/chat-controller/get-base64",
+        "api-reference/chat-controller/mark-as-read",
+        "api-reference/chat-controller/mark-as-unread",
+        "api-reference/chat-controller/send-presence",
+        "api-reference/chat-controller/update-message"
+      ]
+    },
+    {
+      "group": "Message",
+      "pages": [
+        "api-reference/message-controller/send-audio",
+        "api-reference/message-controller/send-button",
+        "api-reference/message-controller/send-contact",
+        "api-reference/message-controller/send-list",
+        "api-reference/message-controller/send-location",
+        "api-reference/message-controller/send-media",
+        "api-reference/message-controller/send-poll",
+        "api-reference/message-controller/send-reaction",
+        "api-reference/message-controller/send-status",
+        "api-reference/message-controller/send-sticker",
+        "api-reference/message-controller/send-text"
+      ]
+    },
+    {
+      "group": "Group",
+      "pages": [
+        "api-reference/group-controller/group-create",
+        "api-reference/group-controller/update-group-picture",
+        "api-reference/group-controller/update-group-subject",
+        "api-reference/group-controller/update-group-description",
+        "api-reference/group-controller/fetch-invite-code",
+        "api-reference/group-controller/revoke-invite-code",
+        "api-reference/group-controller/send-invite-url",
+        "api-reference/group-controller/find-group-by-invite-code",
+        "api-reference/group-controller/find-group-by-jid",
+        "api-reference/group-controller/fetch-all-groups",
+        "api-reference/group-controller/find-participants",
+        "api-reference/group-controller/update-participant",
+        "api-reference/group-controller/update-setting",
+        "api-reference/group-controller/toggle-ephemeral",
+        "api-reference/group-controller/leave-group"
+      ]
+    },
+    {
+      "group": "Settings",
+      "pages": [
+        "api-reference/settings/get",
+        "api-reference/settings/set"
+      ]
+    },
+    {
+      "group": "Profile Settings",
+      "pages": [
+        "api-reference/profile-settings/fetch-business-profile",
+        "api-reference/profile-settings/fetch-profile",
+        "api-reference/profile-settings/update-profile-name",
+        "api-reference/profile-settings/update-profile-status",
+        "api-reference/profile-settings/update-profile-picture",
+        "api-reference/profile-settings/remove-profile-picture",
+        "api-reference/profile-settings/fetch-privacy-settings",
+        "api-reference/profile-settings/update-privacy-settings"
+      ]
+    },
+    {
+      "group": "Webhook",
+      "pages": [
+        "api-reference/webhook/get",
+        "api-reference/webhook/set"
       ]
     }
   ],
@@ -88,9 +236,7 @@
     "twitter": "https://twitter.com/evolution",
     "linkedin": "https://linkedin.com/company/evolution"
   },
-  "analytics": {
-    
-  },
+  "analytics": {},
   "search": {
     "prompt": "Search documentation..."
   },

@@ -1,0 +1,79 @@
+---
+sidebarTitle: 'OpenAI'
+title: 'Introduction'
+
+---
+
+To connect evolution to OpenAI, configure the following variables when you click on **+ OpenAI**
+
+
+
+### **OpenAI Settings**
+
+- **Enabled:**  
+  Toggle to activate or deactivate the ChatGPT integration.
+
+- **Description:**  
+  Optional field to provide a descriptive name for the integration.
+
+- **OpenAI Credentials:**  
+  Provide your **OpenAI API key** here to authenticate requests. Keep this key secure.
+
+- **Bot Type:**  
+  Select the type of bot.  
+  Example: `Assistant` for standard chatbot interactions.
+
+- **Assistant ID:**  
+  If available, input the Assistant ID for personalized bot configurations.
+
+- **Function URL:**  
+  (Optional) URL for a custom function endpoint to handle specific requests.
+
+---
+
+### **Trigger Settings**
+
+- **Trigger Type:**  
+  Choose how to activate the bot, such as `Keyword` or `Event`.
+
+- **Trigger Operator:**  
+  Select how the trigger will be detected, such as `Contains`, `Equals`, or `Starts With`.
+
+- **Trigger:**  
+  Define the specific keyword or event that initiates the ChatGPT bot.
+
+---
+
+### **General Settings**
+
+- **Expire in Minutes:**  
+  Define how long a session remains active. Set `0` for no expiration.
+
+- **Keyword to Finish:**  
+  Specify a keyword to terminate the bot conversation. Example: `#END`.
+
+- **Default Delay Message:**  
+  Set a delay time (in milliseconds) before sending the default message.
+
+- **Unknown Message:**  
+  Define the message displayed when the bot does not understand a request.
+
+- **Listen from me:**  
+  Enable the bot to listen to specific inputs from your system.
+
+- **Stop bot from me:**  
+  Define specific commands to stop the bot.
+
+- **Keep open:**  
+  Enable or disable persistent bot sessions.
+
+- **Debounce Time:**  
+  Set a debounce time (in milliseconds) to avoid multiple triggers in quick succession.
+
+- **Split Messages:**  
+  Enable to allow large messages to be split into smaller parts.
+
+### **Credentials**
+
+You must configure your credentials by assigning a name and a value to this key, the value of the key you can retrieve by accessing the credentials panel within your OpenAi account under account settings by clicking on your profile icon in the top-right corner.
+<img src="/images/chatbot/gpt.png" alt="Descrição da Imagem"  />
