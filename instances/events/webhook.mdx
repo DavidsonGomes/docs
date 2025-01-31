@@ -4,6 +4,21 @@ title: 'Configure a webhook'
 icon: webhook
 ---
 
-Within the webhook **settings** associated with your **instance**, there is a series of events you can enable. First, **activate your webhook** and then configure the **URL** you want the webhook to trigger when a specific event occurs. If you want to **create a separate route for each event**, enable the "Webhook by Events" option. If it is necessary to **send files**, enable the **"Base64 Webhook"** option. You can then select which events the webhook will track and integrate with your configured URL. If you wish to **stop the webhook at any time**, simply deactivate it using the **"Enabled" button** in the top-left corner of the screen.
+Configure webhooks to receive event notifications from your instance. Here's how to set it up:
 
-<img src="/images/instance/webhook.png" alt="Descrição da Imagem"  />
+## Basic Configuration
+1. Enable the webhook using the toggle in the top-left corner
+2. Enter the URL where you want to receive webhook events
+3. Configure additional options:
+   - **Webhook by Events**: Enable to use different URLs for different events
+   - **Base64 Webhook**: Enable to receive files as base64-encoded strings
+
+## Event Selection
+Select which events you want to monitor from the available list. Each selected event will trigger a notification to your webhook URL.
+
+## Managing Your Webhook
+- You can disable the webhook at any time using the "Enabled" toggle
+- Test your webhook configuration to ensure proper event delivery
+- Monitor webhook activity in your logs
+
+<img src="/images/instance/webhook.png" alt="Webhook configuration interface" />

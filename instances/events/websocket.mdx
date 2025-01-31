@@ -1,8 +1,20 @@
 ---
-sidebarTitle: 'Webscoket'
+sidebarTitle: 'Websocket'
 title: 'Configure a websocket'
 icon: wifi 
 ---
 
-To enable and configure the **websocket**, simply click on the enable button, select the events you want to track and receive updates. Use the url **wss://api.yourdomain.com/{instanceName}** within your system and that's it, you will now receive messages **triggered** by the **evolution websocket**. Use the **domain or IP** if you are running evolution on a separate server.
-<img src="/images/instance/websocket.png" alt="Habilitar Websocket " />
+To enable and configure the websocket:
+1. Click the enable button
+2. Select the events you want to track
+3. Use the following URL format in your system:
+   ```
+   wss://api.yourdomain.com/{instanceName}
+   ```
+   Replace `yourdomain.com` with your domain or IP if running Evolution on a separate server.
+
+<Note>Make sure your system can maintain a persistent WebSocket connection for real-time updates.</Note>
+
+Once configured, you'll receive messages triggered by the Evolution websocket.
+
+<img src="/images/instance/websocket.png" alt="Websocket configuration interface" />

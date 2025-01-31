@@ -3,82 +3,91 @@ sidebarTitle: 'Events system'
 title: 'Configure the events'
 icon: timeline
 ---
-Event Descriptions for System Functionalities, this configurations is valid just the instance current
 
-## **APPLICATION_STARTUP**
-- Triggered when the application initializes or starts up. Used to set up the environment or load initial configurations.
+Events are system notifications that can be configured for your current instance. Below are the available event types and their descriptions:
 
-## **CALL**
-- Fires when a call event occurs, such as receiving, starting, or ending a call.
+## Connection Events
+- **APPLICATION_STARTUP**  
+  Triggered when the application initializes, used for environment setup and initial configurations.
 
-## **CHATS_DELETE**
-- Activated when one or more chat threads are deleted from the system.
+- **CONNECTION_UPDATE**  
+  Fires when connection status changes (connecting, reconnecting, disconnecting).
 
-## **CHATS_SET**
-- Sets the initial state of chat threads in the system, typically during application synchronization or startup.
+- **LOGOUT_INSTANCE**  
+  Triggered when the instance logs out.
 
-## **CHATS_UPDATE**
-- Triggered when existing chat threads are updated with new information or statuses.
+- **REMOVE_INSTANCE**  
+  Fired when an instance is removed from the system.
 
-## **CHATS_UPSERT**
-- Fires when chat threads are either added (inserted) or modified (updated) in the system.
+## Message Events
+- **MESSAGES_UPSERT**  
+  Triggered when messages are added or updated.
 
-## **CONNECTION_UPDATE**
-- Handles changes to the connection state, such as connecting, reconnecting, or disconnecting.
+- **MESSAGES_UPDATE**  
+  Fires when existing messages are modified.
 
-## **CONTACTS_SET**
-- Initializes the contacts list during synchronization or application startup.
+- **MESSAGES_DELETE**  
+  Triggered when messages are deleted.
 
-## **CONTACTS_UPDATE**
-- Fired when existing contact details are updated.
+- **MESSAGES_SET**  
+  Sets initial message state during synchronization.
 
-## **CONTACTS_UPSERT**
-- Triggered when contact entries are either added (inserted) or updated in the system.
+## Chat Events
+- **CHATS_UPSERT**  
+  Fires when chats are added or updated.
 
-## **GROUP_PARTICIPANTS_UPDATE**
-- Handles changes to group participants, such as adding or removing members.
+- **CHATS_UPDATE**  
+  Triggered when chat information changes.
 
-## **GROUP_UPDATE**
-- Fires when a group’s metadata (e.g., name, description, settings) is updated.
+- **CHATS_DELETE**  
+  Fires when chats are deleted.
 
-## **GROUPS_UPSERT**
-- Triggered when groups are either added to or updated in the system.
+- **CHATS_SET**  
+  Sets initial chat state during synchronization.
 
-## **LABELS_ASSOCIATION**
-- Manages the association or disassociation of labels with chats, messages, or contacts.
+## Contact Events
+- **CONTACTS_UPSERT**  
+  Triggered when contacts are added or updated.
 
-## **LABELS_EDIT**
-- Triggered when labels are created, updated, or deleted.
+- **CONTACTS_UPDATE**  
+  Fires when contact information changes.
 
-## **LOGOUT_INSTANCE**
-- Fires when the current user or instance logs out of the system.
+- **CONTACTS_SET**  
+  Sets initial contacts during synchronization.
 
-## **MESSAGES_DELETE**
-- Triggered when messages are deleted from a chat thread.
+## Group Events
+- **GROUP_PARTICIPANTS_UPDATE**  
+  Fires when group members are added or removed.
 
-## **MESSAGES_SET**
-- Initializes the messages list for a specific chat, typically during synchronization or startup.
+- **GROUP_UPDATE**  
+  Triggered when group settings or metadata change.
 
-## **MESSAGES_UPDATE**
-- Fires when existing messages are updated, such as edits or status changes.
+- **GROUPS_UPSERT**  
+  Fires when groups are added or updated.
 
-## **MESSAGES_UPSERT**
-- Triggered when messages are either added (inserted) or updated in the system.
+## Label Events
+- **LABELS_EDIT**  
+  Triggered when labels are created, modified, or deleted.
 
-## **PRESENCE_UPDATE**
-- Tracks updates in user presence or activity status (e.g., online, typing).
+- **LABELS_ASSOCIATION**  
+  Fires when labels are associated with or removed from items.
 
-## **QRCODE_UPDATED**
-- Fires when a QR code, typically for authentication or connection, is updated.
+## Other Events
+- **CALL**  
+  Triggered for call-related events (receiving, starting, ending).
 
-## **REMOVE_INSTANCE**
-- Triggered when an instance of the application is removed from the system.
+- **PRESENCE_UPDATE**  
+  Fires when user presence status changes.
 
-## **SEND_MESSAGE**
-- Activated when a message is sent by the user or system.
+- **QRCODE_UPDATED**  
+  Triggered when the connection QR code is updated.
 
-## **TYPEBOT_CHANGE_STATUS**
-- Handles changes in the TypeBot's operational status, such as active or inactive states.
+## Bot Events
+- **SEND_MESSAGE**  
+  Fires when a message is sent.
 
-## **TYPEBOT_START**
-- Fires when the TypeBot instance starts, initializing its services or behaviors.
+- **TYPEBOT_START**  
+  Triggered when a Typebot session begins.
+
+- **TYPEBOT_CHANGE_STATUS**  
+  Fires when Typebot's status changes.

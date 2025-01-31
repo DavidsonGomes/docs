@@ -49,16 +49,16 @@
       ]
     },
     {
-      "group": "Project",
+      "group": "Projects",
       "pages": [
-        "project/introduction",
-        "project/customers",
-        "project/token"
+        "projects/introduction",
+        "projects/customers",
+        "projects/token"
        
       ]
     },
     {
-      "group": "Server",
+      "group": "Servers",
       "pages": [
         "servers/newserver"
        
@@ -73,7 +73,7 @@
           "icon": "gear",
           "pages": [
             "instances/management/overview",
-            "instances/management/creations",
+            "instances/management/creation",
             {
               "group": "Configuration",
               "pages":[
@@ -82,13 +82,7 @@
             }
           ]
         },
-        {
-          "group": "Dashboard",
-          "icon": "chart-simple",
-          "pages": [
-            "instances/dashboard/overview"
-          ]
-        },
+        "instances/dashboard",
         {
           "group": "CRM",
           "icon": "message",
@@ -122,13 +116,7 @@
             "instances/chatbot/sessions"
           ]
         },
-        {
-          "group": "Token",
-          "icon": "key",
-          "pages": [
-            "instances/token/token-instance"
-          ]
-        }
+        "instances/instance-token"
       ]
     },
     {

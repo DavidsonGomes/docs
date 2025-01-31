@@ -4,9 +4,39 @@ title: 'Running EvolutionAPI on Your Own Server'
 icon: server
 ---
 
-# Self-Hosted Setup for EvolutionAPI
+To use a Personal project type, you'll need to run EvolutionAPI on your own infrastructure. This guide explains how to register your self-hosted server with EvolutionAPI Cloud.
 
-If you want to run **EvolutionAPI** on your own infrastructure, such as a private server or virtual machine (VM), follow this guide to configure it properly.
+## Prerequisites
+
+Before registering your server, make sure you have:
+- A running EvolutionAPI instance (version 2.2.1 or higher)
+- Access to your server's admin panel or configuration
+- Your server's API token
+
+## Server Registration
+
+To register your server, you'll need to provide:
+
+- **Server URL**  
+  The complete URL where your EvolutionAPI instance is running (e.g., `https://api.yourdomain.com`)
+
+- **API Token**  
+  Your server's authentication token. This can be found in your EvolutionAPI instance's admin panel or configuration file.
+
+- **Version**  
+  The version of EvolutionAPI you're running. 
+  <Warning>Only versions 2.2.1 and above are supported for integration with EvolutionAPI Cloud.</Warning>
+
+<img src="/images/server/server.png" alt="Server registration interface" />
+
+## Verification
+
+After entering your server details:
+1. The system will verify the connection to your server
+2. If successful, your server will be registered and available for use in Personal projects
+3. You can then create Personal projects that use your self-hosted instances
+
+<Note>Need help setting up EvolutionAPI on your server? Check our [deployment documentation](https://docs.evolution-api.com/deploy/introduction).</Note>
 
 ## Configuration Fields
 
