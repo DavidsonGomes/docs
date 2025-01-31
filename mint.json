@@ -58,6 +58,13 @@
       ]
     },
     {
+      "group": "Server",
+      "pages": [
+        "servers/newserver"
+       
+      ]
+    },
+    {
       "group": "Instances",
       "pages": [
        
@@ -197,7 +204,6 @@
         "api-reference/group-controller/update-group-subject",
         "api-reference/group-controller/update-group-description",
         "api-reference/group-controller/fetch-invite-code",
-        "api-reference/group-controller/accept-invite-code",
         "api-reference/group-controller/revoke-invite-code",
         "api-reference/group-controller/send-invite-url",
         "api-reference/group-controller/find-group-by-invite-code",

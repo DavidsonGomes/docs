@@ -1,0 +1,38 @@
+---
+sidebarTitle: 'Self-Hosted'
+title: 'Running EvolutionAPI on Your Own Server'
+icon: server
+---
+
+# Self-Hosted Setup for EvolutionAPI
+
+If you want to run **EvolutionAPI** on your own infrastructure, such as a private server or virtual machine (VM), follow this guide to configure it properly.
+
+## Configuration Fields
+
+- **URL Server**:  
+  URL Server where the EvolutionAPI is running.
+
+- **Token**:  
+  This is your **access key** required for secure communication with the EvolutionAPI instance. Ensure this is kept private.
+
+- **Version**:  
+  Select the EvolutionAPI version to run.  
+  ⚠️ Only versions `2.2.1` or higher are supported for **V2** servers.
+
+## Setup Instructions
+
+1. **Deploy the API Server:**  
+   Install and configure EvolutionAPI on your server or VM according to the [official deployment documentation](#).
+
+2. **Retrieve the Token:**  
+   Obtain the API token from your EvolutionAPI admin panel or the configuration file.
+
+3. **Configure the Version:**  
+   Select the desired API version. For stability and support, versions `2.2.1+` are recommended.
+
+4. **Testing the Setup:**  
+   Verify the API connection by sending a test request using the following command:
+
+   ```bash
+   curl -X GET "<your-server-url>/health" -H "Authorization: Bearer <your-token>"
