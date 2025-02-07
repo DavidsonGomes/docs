@@ -15,28 +15,12 @@ Before registering your server, make sure you have:
 
 ## Server Registration
 
-To register your server, you'll need to provide:
+To register your server, click on the button "+ Server" in top right corner:
 
-- **Server URL**  
-  The complete URL where your EvolutionAPI instance is running (e.g., `https://api.yourdomain.com`)
 
-- **API Token**  
-  Your server's authentication token. This can be found in your EvolutionAPI instance's admin panel or configuration file.
 
-- **Version**  
-  The version of EvolutionAPI you're running. 
-  <Warning>Only versions 2.2.1 and above are supported for integration with EvolutionAPI Cloud.</Warning>
+<img src="/images/server/init.png" alt="Server registration interface" />
 
-<img src="/images/server/server.png" alt="Server registration interface" />
-
-## Verification
-
-After entering your server details:
-1. The system will verify the connection to your server
-2. If successful, your server will be registered and available for use in Personal projects
-3. You can then create Personal projects that use your self-hosted instances
-
-<Note>Need help setting up EvolutionAPI on your server? Check our [deployment documentation](https://docs.evolution-api.com/deploy/introduction).</Note>
 
 ## Configuration Fields
 
@@ -48,7 +32,15 @@ After entering your server details:
 
 - **Version**:  
   Select the EvolutionAPI version to run.  
-  ⚠️ Only versions `2.2.1` or higher are supported for **V2** servers.
+
+  <Tabs>
+    <Tab title="V2">
+      ⚠️ Only versions `2.2.1` or higher are supported for **V2** servers
+    </Tab>
+    <Tab title="V1">
+      ⚠️ Only versions `1.8.4` or higher are supported for **V1** servers
+    </Tab>
+  </Tabs>
 
 <img src="/images/server/server.png" alt="Descrição da Imagem"  />
 
@@ -68,3 +60,32 @@ After entering your server details:
 
    ```bash
    curl -X GET "<your-server-url>/health" -H "Authorization: Bearer <your-token>"
+  
+## Verification
+
+After entering your server details:
+1. The system will verify the connection to your server
+2. If successful, your server will be registered and available for use in Personal projects
+3. You can then create Personal projects that use your self-hosted instances
+
+<Note>Need help setting up EvolutionAPI on your server? Check our [deployment documentation](https://doc.evolution-api.com/v2/en/install/docker).</Note>
+
+
+## Creating a project personal
+
+
+
+Now you can create a project personal  
+
+
+
+<CardGroup>
+
+  <Card title="Project Personal" icon="folder-plus" href="/projects/project-personal">
+
+
+    Allows you to manage your own self-hosted EvolutionAPI instances through our SaaS interface. 
+
+  </Card>
+
+</CardGroup>

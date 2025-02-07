@@ -41,20 +41,18 @@
   ],
   "navigation": [
     {
-      "group": "Getting Started",
+      "group": "Get Started",
       "pages": [
         "get-started/introduction",
-        "get-started/users",
-        "get-started/limit"
-      ]
-    },
-    {
-      "group": "Projects",
-      "pages": [
-        "projects/introduction",
-        "projects/customers",
-        "projects/token"
-       
+        {
+          "group": "Projects",
+          "icon": "folder",
+          "pages": [
+            "projects/creating",
+            "projects/project-cloud",
+            "projects/project-personal"
+          ]
+        }
       ]
     },
     {
@@ -79,17 +77,17 @@
               "pages":[
                 "instances/management/configurations/settings"
               ]
-            }
-          ]
-        },
-        "instances/dashboard",
-        {
-          "group": "CRM",
-          "icon": "message",
-          "pages": [
+            },
+            "instances/dashboard",
+            {
+              "group": "CRM",
+              "icon": "message",
+              "pages": [
                 "instances/crm/overview",
                 "instances/crm/chat",
                 "instances/crm/contact"
+              ]
+            }
           ]
         },
         {
