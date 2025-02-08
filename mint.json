@@ -24,8 +24,18 @@
     {
       "name": "Support",
       "url": "mailto:support@evolution-api.com"
+    },
+    {
+      "name": "Changelog",
+      "url": "https://evolution.canny.io/changelog"
+    },
+    {
+      "name": "Feature Requests",
+      "url": "https://evolution.canny.io/feature-requests"
     }
   ],
+
+
   "topbarCtaButton": {
     "name": "Login",
     "url": "https://app.evoapicloud.com"
