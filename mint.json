@@ -56,75 +56,77 @@
         "get-started/introduction",
         {
           "group": "Projects",
-          "icon": "folder",
+          "icon": "grid-2",
           "pages": [
             "projects/creating",
             "projects/project-cloud",
             "projects/project-personal"
           ]
-        }
-      ]
-    },
-    {
-      "group": "Servers",
-      "pages": [
-        "servers/newserver"
-       
-      ]
-    },
-    {
-      "group": "Instances",
-      "pages": [
-       
+        },
         {
-          "group": "Instance Management",
-          "icon": "gear",
+          "group": "Instances",
+          "icon": "database",
           "pages": [
-            "instances/management/overview",
-            "instances/management/creation",
+            "instances/overview",
+            "instances/create",
+            "instances/token",
             {
-              "group": "Configuration",
-              "pages":[
-                "instances/management/configurations/settings"
+              "group": "Events",
+              "icon": "timeline",
+              "pages": [
+                "instances/events/events-system",
+                "instances/events/webhook",
+                "instances/events/websocket",
+                "instances/events/pusher"
               ]
             },
-            "instances/dashboard",
             {
-              "group": "CRM",
-              "icon": "message",
+              "group": "Chatbots",
+              "icon": "robot",
               "pages": [
-                "instances/crm/overview",
-                "instances/crm/chat",
-                "instances/crm/contact"
+                "instances/chatbot/chatwoot",
+                "instances/chatbot/dify",
+                "instances/chatbot/evolutionbot",
+                "instances/chatbot/flowise",
+                "instances/chatbot/openai",
+                "instances/chatbot/typebot",
+                "instances/chatbot/defaultsettings",
+                "instances/chatbot/sessions"
+              ]
+            },
+            {
+              "group": "Instance WhatsApp",
+              "pages": [
+                "instances/whatsapp/dashboard",
+                "instances/whatsapp/settings",
+                {
+                  "group": "CRM",
+                  "pages": [
+                    "instances/whatsapp/crm/overview",
+                    "instances/whatsapp/crm/chat",
+                    "instances/whatsapp/crm/contact"
+                  ]
+                }
+              ]
+            },
+            {
+              "group": "Instance Evolution",
+              "pages": [
+                "instances/evolution/dashboard",
+                "instances/evolution/settings",
+                {
+                  "group": "CRM",
+                  "pages": [
+                    "instances/evolution/crm/overview",
+                    "instances/evolution/crm/chat",
+                    "instances/evolution/crm/contact"
+                  ]
+                }
               ]
             }
           ]
         },
-        {
-          "group": "Events",
-          "icon": "timeline",
-          "pages": [
-            "instances/events/events-system",
-            "instances/events/webhook",
-            "instances/events/websocket",
-            "instances/events/pusher"
-          ]
-        },
-        {
-          "group": "Chatbots",
-          "icon": "robot",
-          "pages": [
-            "instances/chatbot/chatwoot",
-            "instances/chatbot/dify",
-            "instances/chatbot/evolutionbot",
-            "instances/chatbot/flowise",
-            "instances/chatbot/openai",
-            "instances/chatbot/typebot",
-            "instances/chatbot/defaultsettings",
-            "instances/chatbot/sessions"
-          ]
-        },
-        "instances/instance-token"
+        "servers/newserver"
       ]
     },
     {
