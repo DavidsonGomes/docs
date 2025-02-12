@@ -24,8 +24,18 @@
     {
       "name": "Support",
       "url": "mailto:support@evolution-api.com"
+    },
+    {
+      "name": "Changelog",
+      "url": "https://evolution.canny.io/changelog"
+    },
+    {
+      "name": "Feature Requests",
+      "url": "https://evolution.canny.io/feature-requests"
     }
   ],
+
+
   "topbarCtaButton": {
     "name": "Login",
     "url": "https://app.evoapicloud.com"
@@ -46,75 +56,154 @@
         "get-started/introduction",
         {
           "group": "Projects",
-          "icon": "folder",
+          "icon": "grid-2",
           "pages": [
             "projects/creating",
             "projects/project-cloud",
             "projects/project-personal"
           ]
-        }
-      ]
-    },
-    {
-      "group": "Servers",
-      "pages": [
-        "servers/newserver"
-       
-      ]
-    },
-    {
-      "group": "Instances",
-      "pages": [
-       
+        },
+         "servers/newserver",
         {
-          "group": "Instance Management",
-          "icon": "gear",
+          "group": "Instances",
+          "icon": "database",
           "pages": [
-            "instances/management/overview",
-            "instances/management/creation",
+            "instances/overview",
             {
-              "group": "Configuration",
-              "pages":[
-                "instances/management/configurations/settings"
+              "group": "Types",
+              "icon": "list-tree",
+              "pages": [
+                {
+                  "group": "Evolution",
+                  "icon": "message",
+                  "pages": [
+                    "instances/evolution/create",
+                    "instances/evolution/dashboard",
+                    "instances/evolution/settings",
+                    {
+                      "group": "CRM",
+                      "pages": [
+                        "instances/whatsapp/crm/overview",
+                        "instances/whatsapp/crm/chat",
+                        "instances/whatsapp/crm/contact"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "group": "WhatsApp Web (Whatsmeow)",
+                  "icon": "cat",
+                  "pages": [
+                    "instances/whatsmeow/create",
+                    "instances/whatsmeow/dashboard",
+                    "instances/whatsmeow/settings",
+                    {
+                      "group": "CRM",
+                      "pages": [
+                        "instances/whatsmeow/crm/overview",
+                        "instances/whatsmeow/crm/chat",
+                        "instances/whatsmeow/crm/contact"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "group": "WhatsApp Web (Baileys)",
+                  "icon": "whatsapp",
+                  "pages": [
+                    "instances/baileys/create",
+                    "instances/baileys/dashboard",
+                    "instances/baileys/settings",
+                    {
+                      "group": "CRM",
+                      "pages": [
+                        "instances/baileys/crm/overview",
+                        "instances/baileys/crm/chat",
+                        "instances/baileys/crm/contact"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "group": "WhatsApp Cloud API",
+                  "icon": "whatsapp",
+                  "pages": [
+                    "instances/whatsapp/create",
+                    "instances/whatsapp/dashboard",
+                    "instances/whatsapp/settings",
+                    {
+                      "group": "CRM",
+                      "pages": [
+                        "instances/whatsapp/crm/overview",
+                        "instances/whatsapp/crm/chat",
+                        "instances/whatsapp/crm/contact"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "group": "Facebook",
+                  "icon": "facebook",
+                  "pages": [
+                    "instances/facebook/create",
+                    "instances/facebook/dashboard",
+                    "instances/facebook/settings",
+                    {
+                      "group": "CRM",
+                      "pages": [
+                        "instances/facebook/crm/overview",
+                        "instances/facebook/crm/chat",
+                        "instances/facebook/crm/contact"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "group": "Instagram",
+                  "icon": "instagram",
+                  "pages": [
+                    "instances/instagram/create",
+                    "instances/instagram/dashboard",
+                    "instances/instagram/settings",
+                    {
+                      "group": "CRM",
+                      "pages": [
+                        "instances/instagram/crm/overview",
+                        "instances/instagram/crm/chat",
+                        "instances/instagram/crm/contact"
+                      ]
+                    }
+                  ]
+                }
               ]
             },
-            "instances/dashboard",
+            "instances/token",
             {
-              "group": "CRM",
-              "icon": "message",
+              "group": "Events",
+              "icon": "timeline",
               "pages": [
-                "instances/crm/overview",
-                "instances/crm/chat",
-                "instances/crm/contact"
+                "instances/events/events-system",
+                "instances/events/webhook",
+                "instances/events/websocket",
+                "instances/events/pusher"
+              ]
+            },
+            {
+              "group": "Chatbots",
+              "icon": "robot",
+              "pages": [
+                "instances/chatbots/chatwoot",
+                "instances/chatbots/dify",
+                "instances/chatbots/evolutionbot",
+                "instances/chatbots/flowise",
+                "instances/chatbots/openai",
+                "instances/chatbots/typebot",
+                "instances/chatbots/defaultsettings",
+                "instances/chatbots/sessions"
               ]
             }
           ]
-        },
-        {
-          "group": "Events",
-          "icon": "timeline",
-          "pages": [
-            "instances/events/events-system",
-            "instances/events/webhook",
-            "instances/events/websocket",
-            "instances/events/pusher"
-          ]
-        },
-        {
-          "group": "Chatbots",
-          "icon": "robot",
-          "pages": [
-            "instances/chatbot/chatwoot",
-            "instances/chatbot/dify",
-            "instances/chatbot/evolutionbot",
-            "instances/chatbot/flowise",
-            "instances/chatbot/openai",
-            "instances/chatbot/typebot",
-            "instances/chatbot/defaultsettings",
-            "instances/chatbot/sessions"
-          ]
-        },
-        "instances/instance-token"
+        }
       ]
     },
     {
