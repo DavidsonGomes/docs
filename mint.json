@@ -82,10 +82,11 @@
                     "instances/evolution/settings",
                     {
                       "group": "CRM",
+                      "icon": "message",
                       "pages": [
-                        "instances/whatsapp/crm/overview",
-                        "instances/whatsapp/crm/chat",
-                        "instances/whatsapp/crm/contact"
+                        "instances/evolution/crm/overview",
+                        "instances/evolution/crm/chat",
+                        "instances/evolution/crm/contact"
                       ]
                     }
                   ]
@@ -99,6 +100,7 @@
                     "instances/whatsmeow/settings",
                     {
                       "group": "CRM",
+                      "icon": "message",
                       "pages": [
                         "instances/whatsmeow/crm/overview",
                         "instances/whatsmeow/crm/chat",
@@ -113,7 +115,16 @@
                   "pages": [
                     "instances/baileys/create",
                     "instances/baileys/dashboard",
-                    "instances/baileys/settings"
+                    "instances/baileys/settings",
+                    {
+                      "group": "CRM",
+                      "icon": "message",
+                      "pages": [
+                        "instances/baileys/crm/overview",
+                        "instances/baileys/crm/chat",
+                        "instances/baileys/crm/contact"
+                      ]
+                    }
                   ]
                 },
                 {
@@ -122,7 +133,16 @@
                   "pages": [
                     "instances/whatsapp/create",
                     "instances/whatsapp/dashboard",
-                    "instances/whatsapp/settings"
+                    "instances/whatsapp/settings",
+                    {
+                      "group": "CRM",
+                      "icon": "message",
+                      "pages": [
+                        "instances/whatsapp/crm/overview",
+                        "instances/whatsapp/crm/chat",
+                        "instances/whatsapp/crm/contact"
+                      ]
+                    }
                   ]
                 },
                 {
