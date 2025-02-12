@@ -58,9 +58,10 @@
           "group": "Projects",
           "icon": "grid-2",
           "pages": [
-            "projects/creating",
+            "projects/creating",            
             "projects/project-cloud",
-            "projects/project-personal"
+            "projects/project-personal",
+            "projects/customers"
           ]
         },
          "servers/newserver",
