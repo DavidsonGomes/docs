@@ -113,15 +113,7 @@
                   "pages": [
                     "instances/baileys/create",
                     "instances/baileys/dashboard",
-                    "instances/baileys/settings",
-                    {
-                      "group": "CRM",
-                      "pages": [
-                        "instances/baileys/crm/overview",
-                        "instances/baileys/crm/chat",
-                        "instances/baileys/crm/contact"
-                      ]
-                    }
+                    "instances/baileys/settings"
                   ]
                 },
                 {
@@ -130,15 +122,7 @@
                   "pages": [
                     "instances/whatsapp/create",
                     "instances/whatsapp/dashboard",
-                    "instances/whatsapp/settings",
-                    {
-                      "group": "CRM",
-                      "pages": [
-                        "instances/whatsapp/crm/overview",
-                        "instances/whatsapp/crm/chat",
-                        "instances/whatsapp/crm/contact"
-                      ]
-                    }
+                    "instances/whatsapp/settings"
                   ]
                 },
                 {
@@ -147,15 +131,7 @@
                   "pages": [
                     "instances/facebook/create",
                     "instances/facebook/dashboard",
-                    "instances/facebook/settings",
-                    {
-                      "group": "CRM",
-                      "pages": [
-                        "instances/facebook/crm/overview",
-                        "instances/facebook/crm/chat",
-                        "instances/facebook/crm/contact"
-                      ]
-                    }
+                    "instances/facebook/settings"
                   ]
                 },
                 {
@@ -164,15 +140,7 @@
                   "pages": [
                     "instances/instagram/create",
                     "instances/instagram/dashboard",
-                    "instances/instagram/settings",
-                    {
-                      "group": "CRM",
-                      "pages": [
-                        "instances/instagram/crm/overview",
-                        "instances/instagram/crm/chat",
-                        "instances/instagram/crm/contact"
-                      ]
-                    }
+                    "instances/instagram/settings"
                   ]
                 }
               ]
